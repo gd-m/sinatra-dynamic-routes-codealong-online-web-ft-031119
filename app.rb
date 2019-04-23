@@ -19,7 +19,7 @@ class App < Sinatra::Base
     status 200
   end
 
-  get "multiply/:num1/:num2" do
+  get "/multiply/:num1/:num2" do
     num = params[:num1] * params[:num2]
     "#{num}"
     status 200
